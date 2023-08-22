@@ -22,7 +22,7 @@ for j = 2 to A.length
 
 # Analyzing algorithms
 
-![insertion](insertion-sort.jpg)
+![insertion](./images/insertion-sort.jpg)
 
 The running time of the algorithm is the sum of running times for each statement executed.
 
