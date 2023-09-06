@@ -1,4 +1,4 @@
-# Analysis_and_Design_of_Algorithms
+# Análisis y diseño de algortimos
 
 ## Series and sumatorias
 
@@ -27,7 +27,6 @@ for j = 2 to A.length
 The running time of the algorithm is the sum of running times for each statement executed.
 
 $T(n)=c_1n+c_2(n-1)+0(n-1)+c_4(n-1)+c_5\sum_{j=2}^nt_j+c_6\sum_{j=2}^n(t_j-1)+c7\sum_{j=2}^n(t_j-1)+c_8(n-1)$
-
 
 $T(n)=c_1n+c_2(n-1)+c_4(n-1)+c_5(n-1)+c_8(n-1)= (c_{1}+c_{2}+c_{4}+c_{5}+c_{8})n-(c_{2}+c_{4}+c_{5}+c_{8})$
 
