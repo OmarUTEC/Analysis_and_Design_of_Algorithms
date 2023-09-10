@@ -21,11 +21,3 @@
 # Recurrences & Runing Time Analyze
 
 </div>
-
-$
-\left\{ \begin{array}{l}
-\text{Línea 1} \\
-\text{Línea 2} \\
-\text{Línea 3}
-\end{array} \right\}
-$
