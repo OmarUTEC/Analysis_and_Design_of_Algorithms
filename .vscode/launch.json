@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/omarch/Escritorio/Analysis_and_Design_of_Algorithms/algortihms",
-      "program": "/home/omarch/Escritorio/Analysis_and_Design_of_Algorithms/algortihms/build/Debug/outDebug",
+      "cwd": "/home/omarch/Escritorio/Analysis_and_Design_of_Algorithms/DyC",
+      "program": "/home/omarch/Escritorio/Analysis_and_Design_of_Algorithms/DyC/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
