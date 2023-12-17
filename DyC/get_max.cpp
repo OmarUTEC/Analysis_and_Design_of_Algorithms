@@ -2,7 +2,6 @@
 #include <climits>
 #include <cmath>
 
-
 int get_max(int arr[], int start, int end) {
     // Caso base: si el subconjunto tiene un solo elemento,
     // ese elemento es el máximo.
@@ -26,7 +25,6 @@ int get_max(int arr[], int start, int end) {
     // Este paso combina las soluciones de las partes izquierda y derecha.
     return (left_max > right_max) ? left_max : right_max;
 }
-
 
 int main(){
 
