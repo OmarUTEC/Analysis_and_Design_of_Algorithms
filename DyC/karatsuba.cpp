@@ -41,6 +41,7 @@ long long multiply(long long x, long long y)
 
 int main() 
 {
+	// test
 	long long a = 6524;
 	long long b = 4382;
 	cout << multiply(a, b) << endl;
