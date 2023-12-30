@@ -1,58 +1,52 @@
 #include <iostream>
-using namespace std;
+#include <vector>
 
-// Function to swap two elements
-void swap(int* a, int* b) {
-    int t = *a;
-    *a = *b;
-    *b = t;
-}
+// Función de partición para QuickSort
+int partition(std::vector<int> &arr, int p, int r) {
+    int x = arr[r];
+    int i = p - 1;
 
-// Function to partition the array
-int partition(int arr[], int low, int high) {
-    int pivot = arr[high];
-    int i = (low - 1);
-
-    for (int j = low; j <= high - 1; j++) {
-        if (arr[j] < pivot) {
+    for (int j = p; j < r; ++j) {
+        if (arr[j] <= x) {
             i++;
-            swap(&arr[i], &arr[j]);
+            std::swap(arr[i], arr[j]);
         }
     }
-    swap(&arr[i + 1], &arr[high]);
-    return (i + 1);
+
+    std::swap(arr[i + 1], arr[r]);
+    return i + 1;
 }
 
-// Recursive function to perform QuickSort
-void quickSort(int arr[], int low, int high) {
-    if (low < high) {
-        int pi = partition(arr, low, high);
-
-        quickSort(arr, low, pi - 1);
-        quickSort(arr, pi + 1, high);
+// Función QuickSort
+void quickSort(std::vector<int> &arr, int p, int r) {
+    if (p < r) {
+        int q = partition(arr, p, r);
+        quickSort(arr, p, q - 1);
+        quickSort(arr, q + 1, r);
     }
 }
 
-// Function to print the array
-void printArray(int arr[], int size) {
-    for (int i = 0; i < size; i++) {
-        cout << arr[i] << " ";
+// Función de prueba
+void testQuickSort() {
+    std::vector<int> arr = {12, 9, 7, 15, 10, -23, 4, 6};
+    int n = arr.size();
+
+    std::cout << "Array antes de ordenar: ";
+    for (int i = 0; i < n; ++i) {
+        std::cout << arr[i] << " ";
     }
-    cout << endl;
-}
-
-// Driver code
-int main() {
-    int arr[] = {10, 7, 8, 9, 1, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
-
-    cout << "Original array: ";
-    printArray(arr, n);
+    std::cout << std::endl;
 
     quickSort(arr, 0, n - 1);
 
-    cout << "Sorted array: ";
-    printArray(arr, n);
+    std::cout << "Array ordenado: ";
+    for (int i = 0; i < n; ++i) {
+        std::cout << arr[i] << " ";
+    }
+    std::cout << std::endl;
+}
 
+int main() {
+    testQuickSort();
     return 0;
 }
