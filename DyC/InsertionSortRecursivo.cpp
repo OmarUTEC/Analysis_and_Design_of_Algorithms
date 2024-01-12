@@ -28,14 +28,14 @@ void recursiveInsertionSort(int A[], int n) {
 }
 
 int main() {
-    // Define un arreglo de prueba
+
     int A[] = {5, 2, 4, 3, 1, 6};
     int n = sizeof(A) / sizeof(A[0]); // Calcula el tamaño del arreglo
 
     // Llama a la función de ordenación en el arreglo
     recursiveInsertionSort(A, n);
 
-    // Imprime el arreglo ordenado
+    // print the sorted array
     cout << "Array ordenado: ";
     for (int i = 0; i < n; i++) {
         cout << A[i] << " ";
