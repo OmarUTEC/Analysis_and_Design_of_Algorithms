@@ -35,6 +35,7 @@ void quicksort(int arr[], int p, int r) {
     }
 }
 
+    // QuickSort
 int main() {
     int array[] = {2,4,5,6,1,-100};
     int n = sizeof(array) / sizeof(array[0]);
