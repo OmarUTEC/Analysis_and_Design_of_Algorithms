@@ -15,9 +15,3 @@
     <img src="./images/m_r.jpg" alt="merge-sort" width="45%">
     <img src="./images/m_r2.jpg" alt="merge-sort2" width="55%">
 </div>
-
-<div align = "center">
-
-# Recurrences & Runing Time Analyze
-
-</div>
